@@ -4,7 +4,9 @@
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
                 {{ __('Users') }}
             </h2>
+            @can('view user')
             <a href="{{ route('user.create') }}" class="bg-emerald-400 rounded-lg text-black px-4 py-2 hover:bg-emerald-200">Create</a>
+            @endcan
         </div>
     </x-slot>
 
